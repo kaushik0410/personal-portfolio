@@ -1,0 +1,57 @@
+.project-container {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.carousel-item > img {
+    height: 80vh;
+    width: auto;
+    background-color: gray;
+}
+
+.carousel-item:hover img {
+    filter: blur(5px);
+}
+
+.carousel-caption {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-item:hover .carousel-caption {
+    display: block;
+}
+
+.carousel-caption > h5 {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.carousel-caption > p {
+    font-size: large;
+    font-weight: 600;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+    color: black;
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+    color: black;
+}
