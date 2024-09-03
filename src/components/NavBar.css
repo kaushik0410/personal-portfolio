@@ -1,0 +1,128 @@
+nav {
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 2px -2px gray;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.user-logo img {
+    height: 60px;
+    padding: 0 10px;
+}
+
+.user-social-container img {
+    height: 50px;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+}
+
+.user-content-container {
+    display: flex;
+    list-style: none;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+}
+
+.user-content-container li {
+    margin: 0 10px;
+}
+
+.user-content-container li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.user-content-container li a:hover {
+    background-color: gray;
+    color: black;
+}
+
+.user-social-container {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.user-social-container li {
+    margin: 0 5px;
+}
+
+.user-social-container li a img {
+    transition: transform 0.2s;
+}
+
+.user-social-container li a:hover img {
+    transform: scale(1.1);
+}
+
+.user-container .menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 765px) {
+    .menu span {
+        display: none;
+    }
+}
+
+@media (max-width: 765px) {
+    .menu span {
+        height: 5px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .user-content-container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        width: 100vw;
+        background-color: rgb(26, 26, 26);
+    }
+
+    .user-content-container.show {
+        display: flex;
+    }
+
+    .user-social-container {
+        display: none;
+        position: absolute;
+        top: 400px;
+        width: 100%;
+        background-color: rgb(26, 26, 26);
+    }
+
+    .user-social-container.show {
+        display: flex;
+    }
+
+}

@@ -1,0 +1,43 @@
+.projects {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects-container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.project-card {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(78, 77, 77, 0.445);
+    border-radius: 10px;
+    transform: scale(0.95);
+}
+
+.project-card.active {
+    opacity: 1;
+    position: relative;
+    transform: scale(1);
+}
+
+.project-card img {
+    width: 100%;
+    margin: 10px;
+    border: 2px solid gray;
+}
